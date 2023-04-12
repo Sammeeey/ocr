@@ -21,13 +21,13 @@ Minimal version of Python script that finds PDF files in speficied directory, *c
 ## Quickstart
 - see *Usage* above
 
-## What actually happens
-- for each PDF in `./samplePDFs`
-  - pdf2image module used to convert PDFs in into images
+## What happens
+- for each PDF in `./samplePDFs`: pdf2image module used to convert PDFs in into images
   - for each image
     - pytesseract module used to convert text in image to string
     - then appends text to .txt file with name of original PDF & saves alongside original PDF
-<!-- TODO: describe code/algo -->
+- process takes up to 10 minutes
+- content `./samplePDFs` expected to look like `./samplePDFsResult` eventually
 
 ## Resources
 - [pytesseract installation](https://github.com/madmaze/pytesseract#installation)
