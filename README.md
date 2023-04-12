@@ -5,29 +5,29 @@ Minimal version of Python script that finds PDF files in speficied directory, *c
 
 ## Installation (on windows 10<!--; tested manually-->)
 1. clone repo
-<!-- 2. enter repo folder: `cd squareMaker` -->
-2. install [*Python tesseract*](https://github.com/madmaze/pytesseract#installation)
-<!-- 3. install [*pdf2image module*](https://github.com/Belval/pdf2image#how-to-install) -->
-3. create virtual environment: `py -m venv venv`
-4. activate virtual environment: `venv\Scripts\activate.bat`
-5. update pip: `py -m pip install --upgrade pip`
-6. install requirements: `pip install -r requirements.txt`
-7. run program as described below (*Usage*)
+2. enter repo directory: `cd squareMaker`
+3. install [*Python tesseract*](https://github.com/madmaze/pytesseract#installation)
+4. create virtual environment: `py -m venv venv`
+5. activate virtual environment: `venv\Scripts\activate.bat`
+6. update pip: `py -m pip install --upgrade pip`
+7. install requirements: `pip install -r requirements.txt`
+8. run program as described below (*Usage*)
 
 ## Usage (on windows 10<!--; tested manually-->)
 1. run `py ocr.py`
-<!-- 2. follow instructions & prompts from program -->
+2. follow instructions & prompts of program
 
 ## Quickstart
-- see *Usage* above
+1. run `py ocr.py`
+2. press Enter to use sample PDFs in `./samplePDFs` subdirectory by default
 
 ## What happens
-- for each PDF in `./samplePDFs`: pdf2image module used to convert PDFs in into images
+`ocr.py` creates .txt files with content of all PDFs in given directory 
+- for each PDF in target directory (default: `./samplePDFs`): pdf2image module used to convert PDFs in into images
   - for each image
-    - pytesseract module used to convert text in image to string
-    - then appends text to .txt file with name of original PDF & saves alongside original PDF
+    - pytesseract module used to convert text in image to string, then appends text to .txt file with name of original PDF & saves alongside original PDF
 - process takes up to 10 minutes
-- content `./samplePDFs` expected to look like `./samplePDFsResult` eventually
+- content of `./samplePDFs` expected to look like `./samplePDFsResult` eventually
 
 ## Resources
 - [pytesseract installation](https://github.com/madmaze/pytesseract#installation)
