@@ -9,6 +9,6 @@ Pillow==9.5.0
 platformdirs==3.2.0
 pluggy==1.0.0
 pyproject_api==1.5.1
-pytesseract @ file:///C:/Users/Name/Desktop/pytesseract
+pytesseract==0.3.10
 tox==4.4.11
 virtualenv==20.21.0
