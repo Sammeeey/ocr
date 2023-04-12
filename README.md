@@ -5,7 +5,7 @@ Minimal version of Python script that finds PDF files in speficied directory, *c
 
 ## Installation (on windows 10<!--; tested manually-->)
 1. clone repo
-2. enter repo directory: `cd squareMaker`
+2. enter repo directory: `cd ocr`
 3. install [*Python tesseract*](https://github.com/madmaze/pytesseract#installation)
 4. create virtual environment: `py -m venv venv`
 5. activate virtual environment: `venv\Scripts\activate.bat`
